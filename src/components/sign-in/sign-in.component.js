@@ -26,12 +26,14 @@ class SignIn extends React.Component{
             console.error(error);
         }
         
-    }
+    };
 
     onChangeHandler=(event)=>{
         const {value, name}= event.target;
         this.setState({[name]:value});
-    }
+    };
+
+  
     
     render(){
         return(
