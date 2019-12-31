@@ -20,8 +20,7 @@ class SignIn extends React.Component{
         try{
             await auth.signInWithEmailAndPassword(email, password);
             this.setState({email:"", password:""});
-        }
-        catch(error)
+        }catch(error)
         {
             console.error(error);
         }
@@ -40,7 +39,7 @@ class SignIn extends React.Component{
             <div className="sign-in">
                 <h3 className="title">SIGN-IN</h3>
                 <span>I already have an account</span>
-                <form onSubmit={this.onsubmitHandler}>
+                <form onSubmit={this.onSubmitHandler}>
                     <FormInput 
                     type="email" 
                     value={this.state.email} 

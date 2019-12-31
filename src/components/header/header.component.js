@@ -16,12 +16,12 @@ const Header=({currentUser,hidden})=>(
 			<Logo/>
 		</Link>
 		<div className="options">
-		<Link className="option" to='/MENU'>MENU</Link>
+		<Link className="option" to='/'>HOME</Link>
 		<Link className="option" to='/shop'>SHOP</Link>
 		{
 			currentUser?
 			(
-			<div className="option" onClick={()=>{auth.signOut();}}>SIGN OUT</div>)
+			<div className="option" onClick={()=>auth.signOut()}>SIGN OUT</div>)
 			:(		
 			<Link className="option" to='/sign-in-and-sign-up'>SIGN IN</Link>
 			)
