@@ -30,9 +30,7 @@ this.unsubscribeFromAuth = auth.onAuthStateChanged( async userAuth=>{
     });
   }
   else{
-    setCurrentUser({
-      currentUser: userAuth
-    });
+    setCurrentUser(userAuth);
   }
   
 });
